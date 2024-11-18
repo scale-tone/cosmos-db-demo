@@ -15,3 +15,10 @@ The code uses identity-based authentication when connecting to Cosmos DB, so you
 		-Scope "/" `
 		-PrincipalId $principalId
 ```
+
+Instrumented with OpenTelemetry and Zipkin exporter, so to see the traces just run Zipkin:
+```
+  curl -sSL https://zipkin.io/quickstart.sh | bash -s
+  java -jar zipkin.jar
+```
+along the way.
